@@ -1,0 +1,20 @@
+{
+  "name": "404-error",
+  "version": "1.0.0",
+  "description": "This is a custom 404 error (not found) page",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [
+    "404",
+    "not",
+    "found",
+    "error"
+  ],
+  "author": "Homayoun Kolagar",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3",
+    "jquery": "^3.7.1"
+  }
+}

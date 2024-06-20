@@ -1,0 +1,165 @@
+@keyframes typing {
+  0% { content: ""; }
+  1% { content: "i"; }
+  2% { content: "is"; }
+  3% { content: "is "; }
+  4% { content: "is n"; }
+  5% { content: "is no"; }
+  6% { content: "is not"; }
+  7% { content: "is not "; }
+  8% { content: "is not r"; }
+  9% { content: "is not re"; }
+  10% { content: "is not rea"; }
+  11% { content: "is not real"; }
+  12% { content: "is not rea"; }
+  13% { content: "is not re"; }
+  14% { content: "is not r"; }
+  15% { content: "is not "; }
+  16% { content: "is not"; }
+  17% { content: "is no"; }
+  18% { content: "is n"; }
+  19% { content: "is "; }
+  20% { content: "is"; }
+  21% { content: "i"; }
+  22% { content: ""; }
+
+  23% { content: "d"; }
+  24% { content: "do"; }
+  25% { content: "doe"; }
+  26% { content: "does"; }
+  27% { content: "does "; }
+  28% { content: "does n"; }
+  29% { content: "does no"; }
+  30% { content: "does not"; }
+  31% { content: "does not "; }
+  32% { content: "does not e"; }
+  33% { content: "does not ex"; }
+  34% { content: "does not exi"; }
+  35% { content: "does not exis"; }
+  36% { content: "does not exist"; }
+  37% { content: "does not exis"; }
+  38% { content: "does not exi"; }
+  39% { content: "does not ex"; }
+  40% { content: "does not e"; }
+  41% { content: "does not "; }
+  42% { content: "does not"; }
+  43% { content: "does no"; }
+  44% { content: "does n"; }
+  45% { content: "does "; }
+  46% { content: "does"; }
+  47% { content: "doe"; }
+  48% { content: "do"; }
+  49% { content: "d"; }
+  50% { content: ""; }
+
+  51% { content: "i"; }
+  52% { content: "is"; }
+  53% { content: "is "; }
+  54% { content: "is a"; }
+  55% { content: "is a "; }
+  56% { content: "is a d"; }
+  57% { content: "is a dr"; }
+  58% { content: "is a dre"; }
+  59% { content: "is a drea"; }
+  60% { content: "is a dream"; }
+  61% { content: "is a drea"; }
+  62% { content: "is a dre"; }
+  63% { content: "is a dr"; }
+  64% { content: "is a d"; }
+  65% { content: "is a "; }
+  66% { content: "is a"; }
+  67% { content: "is "; }
+  68% { content: "is"; }
+  69% { content: "i"; }
+  70% { content: ""; }
+
+  71% { content: "i"; }
+  72% { content: "is"; }
+  73% { content: "is "; }
+  74% { content: "is i"; }
+  75% { content: "is in"; }
+  76% { content: "is in "; }
+  77% { content: "is in t"; }
+  78% { content: "is in th"; }
+  79% { content: "is in the"; }
+  80% { content: "is in the "; }
+  81% { content: "is in the v"; }
+  82% { content: "is in the vo"; }
+  83% { content: "is in the voi"; }
+  84% { content: "is in the void"; }
+  85% { content: "is in the voi"; }
+  86% { content: "is in the vo"; }
+  87% { content: "is in the v"; }
+  88% { content: "is in the "; }
+  89% { content: "is in the"; }
+  90% { content: "is in th"; }
+  91% { content: "is in t"; }
+  92% { content: "is in "; }
+  93% { content: "is in"; }
+  94% { content: "is i"; }
+  95% { content: "is "; }
+  96% { content: "is"; }
+  97% { content: "i"; }
+  98% { content: ""; }
+
+  99%, 100% { content: ""; }
+}    
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.typewriter {
+  --caret: currentcolor;
+}
+
+.typewriter::before {
+  content: "";
+  animation: typing 13.5s infinite;
+}
+
+.typewriter::after {
+  content: "";
+  border-right: 1px solid var(--caret);
+  animation: blink 0.5s linear infinite;
+}
+
+.typewriter.thick::after {
+  border-right: 1ch solid var(--caret);
+}
+
+.typewriter.nocaret::after {
+  border-right: 0;
+}
+
+
+@media (prefers-reduced-motion) {
+  .typewriter::after {
+    animation: none;
+  }
+  
+  @keyframes sequencePopup {   
+    0%, 100% { content: "is not real"; }
+    25% { content: "does not exist"; }
+    50% { content: "is a dream"; }
+    75% { content: "is in the void"; }
+  }
+
+  .typewriter::before {
+    content: "developer";
+    animation: sequencePopup 12s linear infinite;
+  }
+}
+
+/**/
+
+
+.fs-big {
+    font-size: 6rem;
+}
+
+.lg {
+    width: 9rem;
+    height: 9rem;
+}
